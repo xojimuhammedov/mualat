@@ -32,32 +32,32 @@ export const menuData: MenuItem[] = [
     icon: HomeSvg,
     link: "/",
   },
-  // {
-  //   id: 2,
-  //   text: "Hotel",
-  //   icon: ProductIcon,
-  //   submenu: [
-  //     {
-  //       text: "Hamma mehmonxonalar",
-  //       link: "/services",
-  //     },
-  //     {
-  //       text: "Mehmonxona qo'sish",
-  //       link: "/create-service",
-  //     }, 
-  //   ],
-  // },
+  {
+    id: 2,
+    text: "Blog",
+    icon: ProductIcon,
+    submenu: [
+      {
+        text: "Blog",
+        link: "/services",
+      },
+      {
+        text: "Blog qo'shish",
+        link: "/create-service",
+      }, 
+    ],
+  },
   {
     id: 3,
-    text: "Bloglar",
+    text: "Videos",
     icon: BlogIcon,
     submenu: [
       {
-        text: "Bloglar",
+        text: "Videos",
         link: "/blogs",
       },
       {
-        text: "Bloglar yaratish",
+        text: "Videos yaratish",
         link: "/create-blog",
       },
     ],
