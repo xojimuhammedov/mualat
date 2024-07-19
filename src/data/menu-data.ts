@@ -47,21 +47,21 @@ export const menuData: MenuItem[] = [
   //     }, 
   //   ],
   // },
-  // {
-  //   id: 3,
-  //   text: "Bloglar",
-  //   icon: BlogIcon,
-  //   submenu: [
-  //     {
-  //       text: "Bloglar",
-  //       link: "/blogs",
-  //     },
-  //     {
-  //       text: "Bloglar yaratish",
-  //       link: "/create-blog",
-  //     },
-  //   ],
-  // },
+  {
+    id: 3,
+    text: "Bloglar",
+    icon: BlogIcon,
+    submenu: [
+      {
+        text: "Bloglar",
+        link: "/blogs",
+      },
+      {
+        text: "Bloglar yaratish",
+        link: "/create-blog",
+      },
+    ],
+  },
   // {
   //   id: 4,
   //   text: "Yangiliklar",
@@ -113,37 +113,37 @@ export const menuData: MenuItem[] = [
   // },
 
 
-  {
-    id: 7,
-    text: "Категория в соответствии с",
-    icon: BlogIcon,
-    submenu: [
-      {
-        text: "Все категории",
-        link: "/categories",
-      },
-      {
-        text: "Создать категорию",
-        link: "/create-categories",
-      },
-    ],
-  },
+  // {
+  //   id: 7,
+  //   text: "Категория в соответствии с",
+  //   icon: BlogIcon,
+  //   submenu: [
+  //     {
+  //       text: "Все категории",
+  //       link: "/categories",
+  //     },
+  //     {
+  //       text: "Создать категорию",
+  //       link: "/create-categories",
+  //     },
+  //   ],
+  // },
   
-  {
-    id: 8,
-    text: "Продукт",
-    icon: BlogIcon,
-    submenu: [
-      {
-        text: "Все Продукт",
-        link: "/products",
-      },
-      {
-        text: "Создать Продукт",
-        link: "/create-products",
-      },
-    ],
-  },
+  // {
+  //   id: 8,
+  //   text: "Продукт",
+  //   icon: BlogIcon,
+  //   submenu: [
+  //     {
+  //       text: "Все Продукт",
+  //       link: "/products",
+  //     },
+  //     {
+  //       text: "Создать Продукт",
+  //       link: "/create-products",
+  //     },
+  //   ],
+  // },
  
   
 ];
