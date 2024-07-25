@@ -19,8 +19,6 @@ interface FormData {
   text_uz: string;
   text_en: string;
   text_ru: string;
-  address: string;
-  rating: string; 
   images: []
 }
 
@@ -57,14 +55,12 @@ const CreateServiceMain = () => {
     formData.append('text_uz', data.text_uz); 
     formData.append('text_en', data.text_en); 
     formData.append('text_ru', data.text_ru);
-    formData.append('address', data.address);
-    formData.append('rating', data.rating);
 
 
 
     axios
       .post(
-        `${apiUrl}/hotels/`,
+        `${apiUrl}/news/`,
         formData,
         {
           headers:{
@@ -75,7 +71,7 @@ const CreateServiceMain = () => {
       )
       .then((res) => { 
         switch (res.data.message) {
-          case "Blog was created succesfully!":
+          case "News was created succesfully!":
             toast.success(`Hotel yaratildi!🎉`, {
               position: "top-left",
             });
@@ -116,7 +112,7 @@ const CreateServiceMain = () => {
       >
         <div className="cashier-addsupplier-area bg-white p-7 custom-shadow rounded-lg pt-5 mb-5">
           <h4 className="text-[20px] font-bold text-heading mb-9">
-            Hotel yaratish
+            Blog yaratish
           </h4>
           <div className="grid grid-cols-12 gap-x-5"> 
           <div className="lg:col-span-4 md:col-span-6 col-span-12">
@@ -259,60 +255,11 @@ const CreateServiceMain = () => {
   </div>
 </div>
 
-{/* Address */}
-<div className="lg:col-span-4 md:col-span-6 col-span-12">
-  <div className="cashier-select-field mb-5">
-    <h5 className="text-[15px] text-heading font-semibold mb-3">
-      {" "}
-      Address
-    </h5>
-    <div className="cashier-input-field-style">
-      <div className="single-input-field w-full">
-        <input
-          type="text"
-          placeholder="Address"
-          {...register("address", {
-            required: "Address is required",
-          })}
-        />
-        {errors.address && (
-          <span>{errors.address.message}</span>
-        )}
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Rating */}
-<div className="lg:col-span-4 md:col-span-6 col-span-12">
-  <div className="cashier-select-field mb-5">
-    <h5 className="text-[15px] text-heading font-semibold mb-3">
-      {" "}
-      Rating
-    </h5>
-    <div className="cashier-input-field-style">
-      <div className="single-input-field w-full">
-        <input
-          type="text"
-          placeholder="Rating"
-          {...register("rating", {
-            required: "Rating is required",
-          })}
-        />
-        {errors.rating && (
-          <span>{errors.rating.message}</span>
-        )}
-      </div>
-    </div>
-  </div>
-</div>
-
-
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
               <div className="cashier-select-field mb-5">
                 <h5 className="text-[15px] text-heading font-semibold mb-3">
                   {" "}
-                  Hotelning rasmlarini yuklang
+                  Blogning rasmlarini yuklang
                 </h5>
                 <div className="cashier-input-field-style">
                   <div className="single-input-field w-full">
